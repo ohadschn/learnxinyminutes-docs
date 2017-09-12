@@ -76,13 +76,6 @@ a_nested_map:
     that has multiple lines
 : and this is its value
 
-# YAML also allows mapping between sequences with the complex key syntax
-# Some language parsers might complain
-# An example
-? - Manchester United
-  - Real Madrid
-: [ 2001-01-01, 2002-02-02 ]
-
 # Sequences (equivalent to lists or arrays) look like this:
 a_sequence:
     - Item 1
@@ -99,6 +92,13 @@ a_sequence:
 # sequences:
 json_map: {"key": "value"}
 json_seq: [3, 2, 1, "takeoff"]
+
+# YAML also allows mapping between sequences with the complex key syntax
+# Some language parsers might complain
+# An example
+? - Manchester United
+  - Real Madrid
+: [ 2001-01-01, 2002-02-02 ]
 
 #######################
 # EXTRA YAML FEATURES #
